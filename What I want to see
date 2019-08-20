@@ -16,3 +16,4 @@ to{opacity:100%}
 h1,p{
 animation:myfirst 1s infinite;
 }
+网页上输入函数KaTeX  https://katex.org/docs/supported.html
