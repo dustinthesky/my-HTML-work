@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-16T08:03:49.675Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="0BhLlsE1lBkUkeXdpAGt" version="12.1.1" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-10-16T08:03:59.728Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36" etag="nA4Zaq26vtAls7O3sNOZ" version="12.1.1" type="github" pages="1">
   <diagram id="TRQZRxFE2UUnhZVy3Vv9" name="Page-1">
     <mxGraphModel dx="1798" dy="504" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -213,9 +213,6 @@
         </mxCell>
         <mxCell id="Qz9OkryXR8XuoXt7Twxf-3" value="将有问题的被测物体传送至锁螺丝机" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
           <mxGeometry x="420" y="790" width="210" height="20" as="geometry"/>
-        </mxCell>
-        <mxCell id="Qz9OkryXR8XuoXt7Twxf-5" value="Text" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
-          <mxGeometry x="368" y="548" width="40" height="20" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
