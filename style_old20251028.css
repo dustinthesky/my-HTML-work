@@ -1,0 +1,55 @@
+		body {
+		    margin: 30px 20% 50px 20%;
+		    color: white;
+		    background: #005050;
+		}
+
+		h1 {
+		    text-align: center;
+		    margin: 50px 0 50px 0;
+		}
+
+		a {
+		    color: white;
+		    text-decoration: none;
+		}
+
+		div {
+		    text align: left;
+		    line-height: 1.5em;
+		}
+
+		#container {
+		    position: relative;
+		    margin: 20px;
+		}
+
+		#left_side {
+		    position: absolute;
+		    top: 0px;
+		    left: 1%;
+		    width: 30%;
+		    height: 20%;
+		}
+
+		#content {
+		    margin: 0px 35% 0px 40%;
+		}
+
+		#right_side {
+		    position: absolute;
+		    top: 0px;
+		    right: 0px;
+		    width: 20%;
+		    height: 20%;
+		}
+
+		dt {
+		    background-color: black;
+		    color: white;
+		    padding: 10px;
+		    position: sticky;
+		    top: 0;
+		    left: 0;
+		    margin: 1em 0;
+		}
