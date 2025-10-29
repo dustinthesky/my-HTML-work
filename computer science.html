@@ -1,315 +1,65 @@
-<!doctype html>
-<html>
-
-<!-- <head>
-	<style>
-		body {
-			margin: 30px 20% 50px 20%;
-			color: white;
-			background: #005050;
-		}
-
-		h1 {
-			text-align: center;
-			margin: 50px 0 50px 0;
-		}
-
-		a {
-			color: white;
-			text-decoration: none;
-		}
-
-		div {
-			text align: left;
-			line-height: 1.5em;
-		}
-
-		#container {
-			position: relative;
-			margin: 20px;
-		}
-
-		#left_side {
-			position: absolute;
-			top: 0px;
-			left: 1%;
-			width: 30%;
-			height: 20%;
-		}
-
-		#content {
-			margin: 0px 35% 0px 40%;
-		}
-
-		#right_side {
-			position: absolute;
-			top: 0px;
-			right: 0px;
-			width: 20%;
-			height: 20%;
-		}
-
-		dt {
-			background-color: black;
-			color: white;
-			padding: 10px;
-			position: sticky;
-			top: 0;
-			left: 0;
-			margin: 1em 0;
-		}
-	</style>
-</head> -->
-
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      margin: 30px 20% 50px 20%;
-      color: #fff;
-      background: #005050;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 0 0 40px 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      transition: opacity 0.3s ease;
-    }
-
-    a:hover {
-      opacity: 0.8;
-    }
-
-    div {
-      text-align: left;
-      line-height: 1.6;
-    }
-
-    #container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 20px 0;
-    }
-
-    #left_side, #content, #right_side {
-      flex: 1;
-      min-width: 250px;
-      padding: 15px;
-    }
-
-    /* 隐藏空的链接和dd元素 */
-    a:empty,
-    dd:empty {
-      display: none !important;
-    }
-
-    /* 隐藏包含空链接的dd元素 */
-    dd:has(> a:empty) {
-      display: none !important;
-    }
-
-    /* 或者更精确的选择器：隐藏没有文本内容的链接所在的dd */
-    dd:has(> a:not([title]):empty),
-    dd:has(> a:not([title]):not([href])) {
-      display: none;
-    }
-
-    dt {
-      background-color: #000;
-      color: #fff;
-      padding: 12px 16px;
-      position: sticky;
-      top: 0;
-      margin: 1em 0;
-      font-weight: 600;
-      z-index: 10;
-      border-radius: 4px;
-    }
-
-    dd {
-      margin: 10px 0 20px 15px;
-      padding: 8px 12px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-
-    dd:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    /* 响应式布局 */
-    @media (max-width: 768px) {
-      body {
-        margin: 20px 10%;
-      }
-      
-      #container {
-        flex-direction: column;
-      }
-      
-      #left_side, #content, #right_side {
-        min-width: auto;
-        width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编程资源</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-	<a href="https://dustinthesky.github.io/my-HTML-work/">返回</a>
-	<h1>编程</h1>
-	<div>
-		<dl>
-			<div>
-				<dt>前端</dt>
-			</div>
-			<div id="container">
-				<div id="left_side">
-					<dd><a href="https://www.runoob.com/" title="" target="_blank">菜鸟教程</a></dd>
-					<dd><a href="http://anime-manga.jp/chinese/index.html" target="_blank"></a></dd>
-					<dd><a href="https://cn.bing.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
+    <div class="container">
+        <a href="https://dustinthesky.github.io/my-HTML-work/" class="back-link">返回</a>
+        <h1>编程资源</h1>
+        
+        <!-- 前端部分 -->
+        <div class="category-header">
+            <dt>前端</dt>
+        </div>
+        <div class="grid-container">
+            <a href="https://www.runoob.com/" target="_blank" rel="noopener noreferrer" class="grid-item-link">菜鸟教程</a>
+            <a href="https://www.w3.org/" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="标准制定">W3C</a>
+            <a href="https://developer.mozilla.org/zh-CN/" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="火狐开发者论坛">mozilla</a>
+            <a href="https://www.w3school.com.cn/index.html" target="_blank" rel="noopener noreferrer" class="grid-item-link">W3school</a>
+        </div>
 
-				</div>
-				<div id="content">
+        <!-- 阅读部分 -->
+        <div class="category-header">
+            <dt>阅读</dt>
+        </div>
+        <div class="grid-container">
+            <a href="https://ruanyifeng.com/" target="_blank" rel="noopener noreferrer" class="grid-item-link">阮一峰博客</a>
+            <a href="http://www.nifengi.com/dh/dsj.php" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="nifengi">nifengi</a>
+            <a href="http://lackar.com/aa/" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="好看的导航网站">Lackar</a>
+        </div>
 
-					<dd><a href="https://www.w3.org/" target="_blank" title="标准制定">W3C</a></dd>
-					<dd><a href="https://developer.mozilla.org/zh-CN/" target="_blank" title="火狐开发者论坛">mozilla</a></dd>
-					<dd><a href="https://cn.bing.com/" target="_blank"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-				<div id="right_side">
+        <!-- 在线linux编程环境部分 -->
+        <div class="category-header">
+            <dt>在线编程环境</dt>
+        </div>
+        <div class="grid-container">
+            <a href="https://www.marscode.cn/workbench" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="豆包MarsCode">MarsCode</a>
+            <a href="https://cloud.tencent.com/product/cloudstudio" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="腾讯云在线编译器">Cloud Studio</a>
+        </div>
 
-					<dd><a href="https://www.w3school.com.cn/index.html" target="_blank" title="">W3school</a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-			</div>
-			<div>
-				<dt>阅读</dt>
-			</div>
-			<div id="container">
-				<div id="left_side">
-					<dd><a href="ruanyifeng.com/" title="" target="_blank">阮一峰博客</a></dd>
-					<dd><a href="http://anime-manga.jp/chinese/index.html" target="_blank"></a></dd>
-					<dd><a href="https://cn.bing.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
+        <!-- 工具部分 -->
+        <div class="category-header">
+            <dt>开发工具</dt>
+        </div>
+        <div class="grid-container">
+            <a href="https://github.com/WerWolv/ImHex" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="16进制查看器">ImHEX</a>
+            <a href="https://docs.astral.sh/uv/" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="python部署工具">uv</a>
+            <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer" class="grid-item-link">VScode</a>
+            <a href="https://github.com/microsoft/terminal" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="现代化的终端工具">Windows Terminal</a>
+            <a href="https://visualstudio.microsoft.com/zh-hans/vs/" target="_blank" rel="noopener noreferrer" class="grid-item-link">VisualStudio</a>
+        </div>
 
-				</div>
-				<div id="content">
-					<dd><a href="ruanyifeng.com/" title="" target="_blank">阮一峰博客</a></dd>
-					<dd><a href="http://www.nifengi.com/dh/dsj.php" target="_blank" title="nifengi"></a></dd>
-					<dd><a href="http://lackar.com/aa/" target="_blank" title="好看的导航网站"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-				<div id="right_side">
-
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-			</div>
-			<div>
-				<dt>在线linux编程环境</dt>
-			</div>
-			<div id="container">
-				<div id="left_side">
-					<dd><a href="https://www.marscode.cn/workbench" title="豆包MarsCode" target="_blank">MarsCode</a></dd>
-					<dd><a href="http://anime-manga.jp/chinese/index.html" target="_blank"></a></dd>
-					<dd><a href="https://cn.bing.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-
-				</div>
-				<div id="content">
-
-					<dd><a href="https://cloud.tencent.com/product/cloudstudio" target="_blank" title="腾讯云在线编译器">Cloud
-							Studio</a></dd>
-					<dd><a href="http://lackar.com/aa/" target="_blank" title="好看的导航网站"></a></dd>
-					<dd><a href="https://cn.bing.com/" target="_blank"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-				<div id="right_side">
-
-					<dd><a href="http://lackar.com/aa/" target="_blank" title="好看的导航网站"></a></dd <dd><a
-						href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-			</div>
-			<div>
-				<dt>工具</dt>
-			</div>
-			<div id="container">
-				<div id="left_side">
-					<dd><a href="https://github.com/WerWolv/ImHex" title="16进制查看器" target="_blank">ImHEX</a></dd>
-					<dd><a href="https://docs.astral.sh/uv/" target="_blank" title="python部署工具">uv</a></dd>
-					<dd><a href="https://cn.bing.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-
-				</div>
-				<div id="content">
-
-					<dd><a href="https://code.visualstudio.com/" title="" target="_blank">VScode</a></dd>
-					<dd><a href="https://github.com/microsoft/terminal" target="_blank" title="现代化的终端工具">Windows Terminal</a></dd>
-					<dd><a href="https://cn.bing.com/" target="_blank"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-				<div id="right_side">
-
-					<dd><a href="https://visualstudio.microsoft.com/zh-hans/vs/" target="_blank" title="">VisualStudio</a></dd <dd><a
-						href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-			</div>
-			<div>
-				<dt>免费课程</dt>
-			</div>
-			<div id="container">
-				<div id="left_side">
-					<dd><a href="https://www.lanqiao.cn/" title="" target="_blank">蓝桥云课</a></dd>
-					<dd><a href="http://anime-manga.jp/chinese/index.html" target="_blank"></a></dd>
-					<dd><a href="https://cn.bing.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-
-				</div>
-				<div id="content">
-
-					<dd><a href="http://www.xiacoo.com/" target="_blank" title="全面导航"></a></dd>
-					<dd><a href="http://lackar.com/aa/" target="_blank" title="好看的导航网站"></a></dd>
-					<dd><a href="https://cn.bing.com/" target="_blank"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-				<div id="right_side">
-
-					<dd><a href="http://lackar.com/aa/" target="_blank" title="好看的导航网站"></a></dd <dd><a
-						href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-					<dd><a href="https://www.baidu.com/"></a></dd>
-				</div>
-			</div>
-		</dl>
-	</div>
+        <!-- 免费课程部分 -->
+        <div class="category-header">
+            <dt>免费课程</dt>
+        </div>
+        <div class="grid-container">
+            <a href="https://www.lanqiao.cn/" target="_blank" rel="noopener noreferrer" class="grid-item-link">蓝桥云课</a>
+        </div>
+    </div>
 </body>
-
-
-
 </html>

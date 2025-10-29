@@ -1,200 +1,24 @@
-<!doctype html>
-<html>
-<!-- <head>
-<style>
-body{
-  margin:30px 20% 50px 20%;
-  color:white;
-  background:#005050;
- }
- h1{
- text-align:center;
- margin:50px 0 50px 0;
- }
- a{
- color:white;
- text-decoration:none;
- }
- div{
- text align:left;
- line-height:1.5em;
- }
- #container{  
-    position:relative;  
-    margin:20px;    
-}  
-#left_side{  
-position:absolute;
-    top:0px;  
-    left:1%;  
-    width:30%; 
-		height:20%;
-}  
-#content{ 
-    margin:0px 35% 0px 40%;   
-}  
-#right_side{  
-   position:absolute;
-    top:0px;  
-    right:0px;  
-    width:20%; 
-		height:20%;
-}  
-dt {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  margin: 1em 0;
-}
-
-</style>
-</head> -->
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      margin: 30px 20% 50px 20%;
-      color: #fff;
-      background: #005050;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      line-height: 1.6;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 0 0 40px 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      transition: opacity 0.3s ease;
-    }
-
-    a:hover {
-      opacity: 0.8;
-    }
-
-    div {
-      text-align: left;
-      line-height: 1.6;
-    }
-
-    #container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      margin: 20px 0;
-    }
-
-    #left_side, #content, #right_side {
-      flex: 1;
-      min-width: 250px;
-      padding: 15px;
-    }
-
-    /* 隐藏空的链接和dd元素 */
-    a:empty,
-    dd:empty {
-      display: none !important;
-    }
-
-    /* 隐藏包含空链接的dd元素 */
-    dd:has(> a:empty) {
-      display: none !important;
-    }
-
-    /* 或者更精确的选择器：隐藏没有文本内容的链接所在的dd */
-    dd:has(> a:not([title]):empty),
-    dd:has(> a:not([title]):not([href])) {
-      display: none;
-    }
-
-    dt {
-      background-color: #000;
-      color: #fff;
-      padding: 12px 16px;
-      position: sticky;
-      top: 0;
-      margin: 1em 0;
-      font-weight: 600;
-      z-index: 10;
-      border-radius: 4px;
-    }
-
-    dd {
-      margin: 10px 0 20px 15px;
-      padding: 8px 12px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-
-    dd:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    /* 响应式布局 */
-    @media (max-width: 768px) {
-      body {
-        margin: 20px 10%;
-      }
-      
-      #container {
-        flex-direction: column;
-      }
-      
-      #left_side, #content, #right_side {
-        min-width: auto;
-        width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>语言学习资源</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-	<a href="https://dustinthesky.github.io/my-HTML-work/">返回</a>
-<h1>语言学习</h1>
-<div>
-<dl>
-    <div><dt>日语</dt></div>
-		<div id="container">  
-            <div id="left_side">
-			<dd><a href="https://www.erin.ne.jp/zh/" title="日语学习 情景对话" target="_blank">艾琳的挑战</a></dd>
-				<dd><a href="http://anime-manga.jp/chinese/index.html" target="_blank" ></a></dd>
-                <dd><a href="https://cn.bing.com/"></a></dd>
-				<dd><a href="https://www.baidu.com/"></a></dd>
-			
-			</div>  
-            <div id="content">
-			          
-				<dd><a href="http://anime-manga.jp/chinese/index.html" target="_blank" title="看漫画 学日语">动漫日语</a></dd>
-				<dd><a href="https://www.dogedoge.com/" target="_blank"></a></dd>
-                <dd><a href="https://cn.bing.com/" target="_blank"></a></dd>
-				<dd><a href="https://www.baidu.com/"></a></dd>
-			</div>  
-            <div id="right_side">
-			            
-						<dd><a href="https://www.baidu.com/"></a></dd>
-				<dd><a href="https://www.baidu.com/"></a></dd>
-				<dd><a href="https://www.baidu.com/"></a></dd>
-				<dd><a href="https://www.baidu.com/"></a></dd>
-			</div>  
-        </div>  
-</dl>
-</div>
+    <div class="container">
+        <a href="https://dustinthesky.github.io/my-HTML-work/" class="back-link">返回</a>
+        <h1>语言学习</h1>
+        
+        <!-- 日语学习部分 -->
+        <div class="category-header">
+            <dt>日语</dt>
+        </div>
+        <div class="grid-container">
+            <a href="https://www.erin.ne.jp/zh/" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="日语学习 情景对话">艾琳的挑战</a>
+            <a href="http://anime-manga.jp/chinese/index.html" target="_blank" rel="noopener noreferrer" class="grid-item-link" title="看漫画 学日语">动漫日语</a>
+        </div>
+    </div>
 </body>
-
-
-
 </html>
